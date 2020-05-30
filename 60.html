@@ -1,0 +1,117 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.header{
+			width: 600px;
+			
+			margin-left: auto;
+			margin-right: auto;
+			background-color: yellow
+		}
+		.text{
+			color:red;
+		}
+		.img{
+			width: 600px
+		}
+		.qu1{
+			width: 600px;
+			
+			margin-left: auto;
+			margin-right: auto;
+			background-color: purple
+
+		}
+		.qu2{
+			width: 600px;
+			
+			margin-left: auto;
+			margin-right: auto;
+			background-color: green
+			
+		}
+		.qu3{
+			width: 600px;
+			
+			margin-left: auto;
+			margin-right: auto;
+			background-color: orange;
+			
+		}
+	</style>
+
+</head>
+<body>
+	<div class="header">
+		<h1 class="text" id='text'>
+		Сколько людей на планете?</h1>
+		<img src="1.jpg" class="img">
+		<div class="qu1">
+			<P id='simple'>12 млрд</P>
+			
+		</div>
+		<div class="qu2">
+			<P id='simple1'>7,5 млрд</P>
+			
+		</div>
+		<div class="qu3">
+			<P id='simplе2'>5,5 млрд</P>
+			
+		</div>
+	</div>
+
+	<script>
+		
+		document.querySelector(".qu1").onclick = function(){
+			alert(" неправильно")}
+
+
+
+		document.querySelector(".qu2").onclick = function(){
+			alert("правильно");
+			document.querySelector(".img").src = ("2.jpg");
+			document.getElementById("text").innerHTML="Какой стоит планета сатурн?";
+			document.getElementById("simple").innerHTML="первой";
+			document.getElementById("simple1").innerHTML="шестой";
+			document.getElementById("simplе2").innerHTML="третей";
+
+
+			document.querySelector(".qu2").onclick = function(){
+			alert(" правильно");
+			document.querySelector(".img").src = ("3.jpg");
+			document.getElementById("text").innerHTML="В чем измеряется ток?";
+			document.getElementById("simple").innerHTML="Ампер";
+			document.getElementById("simple1").innerHTML="Вольт";
+			document.getElementById("simplе2").innerHTML="Ватт";
+
+
+
+			document.querySelector(".qu1").onclick = function(){
+			alert(" правильно");
+			document.querySelector(".img").style.display = "none"; 
+			document.getElementById("text").innerHTML="YOU WIN";
+			document.getElementById("text").style.textAlign="center";
+			document.getElementById("simple").style.display = "none";
+			document.getElementById("simple1").style.display = "none";
+			document.getElementById("simplе2").style.display = "none";}
+
+
+			document.querySelector(".qu3").onclick = function(){
+			alert(" неправильно")}
+
+
+			document.querySelector(".qu2").onclick = function(){
+			alert("неправильно");}}}
+
+
+		document.querySelector(".qu3").onclick = function(){
+		alert(" неправильно")}
+	</script>
+
+
+
+</body>
+</html>
